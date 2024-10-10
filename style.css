@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fondocastillo.png'); /* Reemplaza 'fondo.jpg' por el nombre de tu imagen */
+    background-size: cover; /* Hace que el fondo cubra toda la pantalla */
+    background-position: center; /* Centra la imagen del fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh;
+    padding: 0;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+    margin: 20px;
+    padding: 20px;
+    max-width: 400px; /* Asegúrate de que el ancho se mantenga razonable */
+    width: 100%; /* Esto permite que el ancho se ajuste */
+    box-sizing: border-box; /* Incluye el padding y el border en el total */
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.time {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos opcionales */
+@media only screen and (max-width: 375px) {
+    .card {
+        padding: 15px; /* Ajusta el padding para pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+}
+
+.logo {
+    display: block; /* Asegura que se muestre como un bloque separado */
+    margin: 0 auto 20px auto; /* Centra la imagen horizontalmente */
+    max-width: 400px; /* Ajusta el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.qr-container {
+    display: flex; /* Flexbox facilita el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+}
+
+.qr-container img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción del QR */
+}
+#date {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+}
+#validity {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+#validity p {
+    margin: 0;
+}
+/* Estilo común para hora, fecha y validez */
+#time, #date, #validity p {
+    text-align: center;
+    font-size: 1rem; /* Ajusta este valor para cambiar el tamaño */
+    color: #333;
+    margin: 5px 0; /* Espacio entre los elementos */
+}
+
+/* Estilo específico para el contenedor de validez */
+#validity {
+    margin-top: 10px;
+}

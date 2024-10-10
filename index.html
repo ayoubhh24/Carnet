@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnet Universitario</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div class="card">
+        <header>
+            <img src="logouma.png" alt="Logo UMA" class="logo">
+            <h2>Curso 2024/2025</h2>
+        </header>
+
+        <div class="photo">
+            <img src="avatar.png" alt="Foto del Estudiante">
+        </div>
+
+        <div class="info">
+            <h3>Ayoub El Hamoul Hamani</h3>
+            <p>DNI: 53897993T</p>
+            <p>NIU: 0611374447</p>
+        </div>
+       
+        </div>
+        <div class="qr">
+            <canvas id="qr-code"></canvas>
+        </div>
+
+        <div class="time">
+            <p id="time"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<div id="time"></div>
+<div id="date"></div> <!-- Nuevo div para la fecha -->
+<div id="validity">
+    <p>Válido hasta</p>
+    <p>30/09/2025</p>
+</div>
